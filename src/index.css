@@ -1,3 +1,107 @@
+:root {
+	/* colors */
+	--clr-dark: #0b0d17;
+	--clr-accent: #d0d6f9;
+	--clr-white: #ffffff;
+
+	/* font sizes */
+	--fs-heading1: 9.375rem;
+	--fs-heading2: 6.25rem;
+	--fs-heading3: 3.5rem;
+	--fs-heading4: 2rem;
+	--fs-heading5: 1.75rem;
+	--fs-subheading1: 1.125rem;
+	--fs-subheading2: 1rem;
+	--fs-subheading3: 0.875rem;
+
+	font-family: 'Bellefair', serif;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	margin: 0;
+	line-height: 1.5;
+	min-height: 100vh;
+	font-size: 1.125rem;
+	font-family: 'Barlow', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	box-sizing: content-box;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	font-weight: 400;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	margin-inline: auto;
+	max-width: 90%;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.fs-heading1 {
+	font-size: 9.375rem;
+}
+.fs-heading2 {
+	font-size: 6.25rem;
+}
+.fs-heading3 {
+	font-size: 3.5rem;
+}
+.fs-heading4 {
+	font-size: 2rem;
+}
+.fs-heading5 {
+	font-size: 1.75rem;
+}
+.fs-subheading1 {
+	font-size: 1.125rem;
+}
+.fs-subheading2 {
+	font-size: 1rem;
+}
+.fs-subheading3 {
+	font-size: 0.875rem;
+}
+
+.fs-heading1,
+.fs-heading2,
+.fs-heading3,
+.fs-heading4 {
+	line-height: 1.1;
 }
