@@ -4,11 +4,8 @@ import styles from './Header.module.css';
 
 const Header = () => {
 	const [click, setClick] = useState(false);
+	const handleClick = () => setClick(!click);
 
-	const handleClick = () => {
-		console.log('clicked');
-		setClick(!click);
-	};
 	return (
 		<header className={styles.header}>
 			<div className={` ${styles.header__flex}`}>
@@ -18,11 +15,17 @@ const Header = () => {
 					</Link>
 				</div>
 				<nav className={`${styles.nav}`}>
-					<ul className={styles.nav__list}>
+					<ul
+						className={
+							click
+								? `${styles.nav__list}`
+								: `${styles.nav__list} ${styles.active}`
+						}
+					>
 						<li className={styles.list__item}>
 							<Link
 								to='/home'
-								className={`${styles.active} ${styles.list__link}`}
+								className={`${styles.page__active} ${styles.list__link}`}
 							>
 								<span>00</span>
 								home
@@ -53,8 +56,8 @@ const Header = () => {
 					<img
 						src={
 							click
-								? '/assets/shared/icon-close.svg'
-								: '/assets/shared/icon-hamburger.svg'
+								? '/assets/shared/icon-hamburger.svg'
+								: '/assets/shared/icon-close.svg'
 						}
 						alt='menu'
 						onClick={handleClick}
