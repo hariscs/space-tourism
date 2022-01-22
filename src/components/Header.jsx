@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
-	const [click, setClick] = useState(false);
+	const [click, setClick] = useState(true);
 	const handleClick = () => setClick(!click);
 
 	return (
