@@ -14,10 +14,11 @@
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(81.5485px);
 	-webkit-backdrop-filter: blur(81.5485px);
+	gap: 2.875rem;
 }
 
 .list__link {
-	margin-right: 2.5rem;
+	/* padding-inline: 2.5rem; */
 	color: var(--clr-white);
 	text-transform: uppercase;
 	display: inline-block;
@@ -56,7 +57,8 @@
 	display: none;
 }
 
-@media (max-width: 45em) {
+/* media query for mobile menu */
+@media (max-width: 50em) {
 	.nav__list {
 		flex-direction: column;
 		position: fixed;
@@ -100,5 +102,15 @@
 		display: block;
 		cursor: pointer;
 		z-index: 1;
+	}
+}
+
+/* media query for tablets screens */
+@media (min-width: 50em) {
+	.list__item:first-child {
+		margin-left: 2.875rem;
+	}
+	.list__item:last-child {
+		margin-right: 2.875rem;
 	}
 }
