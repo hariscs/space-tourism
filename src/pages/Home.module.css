@@ -1,6 +1,20 @@
 .home {
-	background-image: url(../home/background-home-desktop.jpg);
+	background-image: url(../pages/bg-images/background-home-mobile.jpg);
 	background-position: center;
 	background-size: cover;
 	min-height: 100vh;
+}
+
+/* media query for tablets screens */
+@media (min-width: 50em) {
+	.home {
+		background-image: url(../pages/bg-images/background-home-tablet.jpg);
+	}
+}
+
+/* media query for desktop screens */
+@media (min-width: 80em) {
+	.home {
+		background-image: url(../pages/bg-images/background-home-desktop.jpg);
+	}
 }
