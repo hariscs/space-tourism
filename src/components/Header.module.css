@@ -10,11 +10,11 @@
 
 .nav__list {
 	display: flex;
+	gap: 2.875rem;
 	font-family: 'Barlow Condensed', sans-serif;
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(81.5485px);
 	-webkit-backdrop-filter: blur(81.5485px);
-	gap: 2.875rem;
 }
 
 .list__link {
@@ -112,5 +112,38 @@
 	}
 	.list__item:last-child {
 		margin-right: 2.875rem;
+	}
+}
+
+/* media query for desktop screens */
+@media (min-width: 80em) {
+	.header__flex {
+		padding-top: 2.5rem;
+	}
+
+	.nav {
+		position: relative;
+	}
+
+	.nav__list::before {
+		position: absolute;
+		content: '';
+		background: var(--clr-white);
+		opacity: 0.25;
+		width: 40%;
+		height: 3px;
+		right: 85%;
+		top: 50%;
+	}
+
+	.nav__list {
+		gap: 3rem;
+	}
+
+	.list__item:first-child {
+		margin-left: 10.438rem;
+	}
+	.list__item:last-child {
+		margin-right: 10.438rem;
 	}
 }
