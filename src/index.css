@@ -13,8 +13,6 @@
 	--fs-subheading1: 1.125rem;
 	--fs-subheading2: 1rem;
 	--fs-subheading3: 0.875rem;
-
-	font-family: 'Bellefair', serif;
 }
 
 html {
@@ -48,6 +46,7 @@ h4 {
 	margin: 0;
 	font-weight: 400;
 	font-family: 'Barlow Condensed', sans-serif;
+	line-height: 1.1;
 }
 
 p {
@@ -65,9 +64,26 @@ li {
 	list-style: none;
 }
 
-.container {
-	margin-inline: auto;
-	max-width: 90%;
+.grid__container {
+	display: grid;
+	grid-template-columns: minmax(1.5rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
+			1.5rem,
+			1fr
+		);
+	column-gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.grid__container > *:first-child {
+	grid-column: 2;
+	border: 1px solid red;
+}
+
+.grid__container > *:last-child {
+	grid-column: 3;
+	outline: 1px solid yellow;
 }
 
 .uppercase {
