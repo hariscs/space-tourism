@@ -121,11 +121,10 @@ li {
 
 	.grid__container > *:first-child {
 		grid-column: 2;
-		border: 1px solid red;
+		text-align: left;
 	}
 
 	.grid__container > *:last-child {
 		grid-column: 3;
-		outline: 1px solid yellow;
 	}
 }
