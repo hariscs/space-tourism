@@ -24,8 +24,12 @@ const Header = () => {
 					>
 						<li className={styles.list__item}>
 							<NavLink
-								to='/home'
-								className={`${styles.page__active} ${styles.list__link}`}
+								to='/'
+								className={(navData) =>
+									navData.isActive
+										? `${styles.page__active} ${styles.list__link}`
+										: `${styles.list__link}`
+								}
 							>
 								<span>00</span>
 								home
@@ -33,19 +37,40 @@ const Header = () => {
 						</li>
 
 						<li className={styles.list__item}>
-							<NavLink to='/destinations' className={styles.list__link}>
+							<NavLink
+								to='/destinations'
+								className={(navData) =>
+									navData.isActive
+										? `${styles.page__active} ${styles.list__link}`
+										: `${styles.list__link}`
+								}
+							>
 								<span>01</span>
 								destinations
 							</NavLink>
 						</li>
 						<li className={styles.list__item}>
-							<NavLink to='/about' className={styles.list__link}>
+							<NavLink
+								to='/crew'
+								className={(navData) =>
+									navData.isActive
+										? `${styles.page__active} ${styles.list__link}`
+										: `${styles.list__link}`
+								}
+							>
 								<span>02</span>
 								crew
 							</NavLink>
 						</li>
 						<li className={styles.list__item}>
-							<NavLink to='/technology' className={styles.list__link}>
+							<NavLink
+								to='/technology'
+								className={(navData) =>
+									navData.isActive
+										? `${styles.page__active} ${styles.list__link}`
+										: `${styles.list__link}`
+								}
+							>
 								<span>03</span>
 								technology
 							</NavLink>

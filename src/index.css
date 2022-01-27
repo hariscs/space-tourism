@@ -3,16 +3,6 @@
 	--clr-dark: #0b0d17;
 	--clr-accent: #d0d6f9;
 	--clr-white: #ffffff;
-
-	/* font sizes */
-	--fs-heading1: 9.375rem;
-	--fs-heading2: 6.25rem;
-	--fs-heading3: 3.5rem;
-	--fs-heading4: 2rem;
-	--fs-heading5: 1.75rem;
-	--fs-subheading1: 1.125rem;
-	--fs-subheading2: 1rem;
-	--fs-subheading3: 0.875rem;
 }
 
 html {
@@ -64,6 +54,11 @@ li {
 	list-style: none;
 }
 
+.container {
+	width: 90%;
+	margin-inline: auto;
+}
+
 .grid__container {
 	display: grid;
 	text-align: center;
@@ -73,36 +68,33 @@ li {
 	text-transform: uppercase;
 }
 
-.fs-heading1 {
-	font-size: 9.375rem;
-}
-.fs-heading2 {
-	font-size: 6.25rem;
-}
-.fs-heading3 {
-	font-size: 3.5rem;
-}
-.fs-heading4 {
-	font-size: 2rem;
-}
-.fs-heading5 {
-	font-size: 1.75rem;
-}
-.fs-subheading1 {
-	font-size: 1.125rem;
-}
-.fs-subheading2 {
+.page__title {
+	color: var(--clr-white);
+	text-transform: uppercase;
 	font-size: 1rem;
-}
-.fs-subheading3 {
-	font-size: 0.875rem;
+	letter-spacing: 2.7px;
+	text-align: center;
+	margin-block: 1rem 2rem;
 }
 
-.fs-heading1,
-.fs-heading2,
-.fs-heading3,
-.fs-heading4 {
-	line-height: 1.1;
+.page__title span {
+	opacity: 0.25;
+	margin-right: 1.125rem;
+	font-weight: 700;
+}
+
+/* media query for tablets screens */
+@media (min-width: 50em) {
+	/* main title for all pages */
+	.page__title {
+		font-size: 1.25rem;
+		letter-spacing: 3.38px;
+		text-align: left;
+	}
+
+	.page__title span {
+		margin-right: 1.188rem;
+	}
 }
 
 /* media query for desktop screens */
@@ -126,5 +118,15 @@ li {
 
 	.grid__container > *:last-child {
 		grid-column: 3;
+	}
+
+	/* main title for all pages */
+	.page__title {
+		font-size: 1.75rem;
+		letter-spacing: 4.72px;
+	}
+
+	.page__title span {
+		margin-right: 1.75rem;
 	}
 }
