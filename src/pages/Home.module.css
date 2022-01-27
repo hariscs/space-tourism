@@ -75,9 +75,29 @@
 @media (min-width: 50em) {
 	.home {
 		background-image: url(../pages/bg-images/background-home-tablet.jpg);
+		background-position: top;
 	}
 
 	.main__title {
+		font-size: 1.25rem;
+		margin-top: 6.625rem;
+	}
+
+	.main__title span {
+		font-size: 9.375rem;
+		margin-block: 1.5rem;
+	}
+
+	.main__subtitle {
+		font-size: 1rem;
+		max-width: 49ch;
+		margin-bottom: 9.75rem;
+	}
+
+	.btn {
+		font-size: 2rem;
+		width: 242px;
+		margin-bottom: 5.625rem;
 	}
 }
 
