@@ -12,9 +12,10 @@
 	display: flex;
 	gap: 2.875rem;
 	font-family: 'Barlow Condensed', sans-serif;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.04);
 	backdrop-filter: blur(81.5485px);
 	-webkit-backdrop-filter: blur(81.5485px);
+	/* background: rgba(10, 10, 10, 0.9); */
 }
 
 .list__link {
@@ -67,6 +68,7 @@
 		transform: translateX(100%);
 		transition: all 300ms ease-in;
 		height: 100vh;
+		z-index: 2;
 	}
 	.active {
 		transform: translateX(0);
@@ -101,7 +103,7 @@
 		padding: 2rem;
 		display: block;
 		cursor: pointer;
-		z-index: 1;
+		z-index: 3;
 	}
 }
 
@@ -134,6 +136,10 @@
 		height: 3px;
 		right: 95%;
 		top: 50%;
+	}
+
+	.nav__list {
+		background: rgba(255, 255, 255, 0.2);
 	}
 
 	.nav__list {
