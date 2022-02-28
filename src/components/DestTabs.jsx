@@ -1,8 +1,17 @@
 const DestTabs = () => {
+	const handler = (e) => {
+		console.log(e.target.getAttribute('data-index'));
+	};
 	return (
 		<div className='grid__container'>
-			<h2>Dest tabs</h2>
-			<h2>Dest tabs</h2>
+			<ul>
+				{/*	<li data-index={index} onClick={handler}>
+					<h2 style={{ color: 'white' }}>Dest tabs</h2>
+				</li>
+				 <li>
+					<h2>Dest tabs</h2>
+				</li> */}
+			</ul>
 		</div>
 	);
 };

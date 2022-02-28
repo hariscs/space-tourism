@@ -1,0 +1,19 @@
+.dest {
+	background-image: url(../../bg-images/destination/background-destination-mobile.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+/* media query for tablets screens */
+@media (min-width: 50em) {
+	.dest {
+		background-image: url(../../bg-images/destination/background-destination-tablet.jpg);
+	}
+}
+/* media query for desktop screens */
+@media (min-width: 80em) {
+	.dest {
+		background-image: url(../../bg-images/destination/background-destination-desktop.jpg);
+	}
+}

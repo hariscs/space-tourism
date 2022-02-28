@@ -1,6 +1,6 @@
-import DestTabs from '../components/DestTabs';
 import Header from '../components/Header';
-import styles from './Destination.module.css';
+import styles from '../styles/pages/Destination.module.css';
+import DestTabs from '../components/DestTabs';
 
 const Destinations = () => {
 	return (

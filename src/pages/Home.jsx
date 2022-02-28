@@ -1,5 +1,5 @@
-import styles from './Home.module.css';
-
+import { NavLink } from 'react-router-dom';
+import styles from '../styles/pages/Home.module.css';
 import Header from '../components/Header';
 
 const Home = () => {
@@ -20,9 +20,9 @@ const Home = () => {
 					</p>
 				</div>
 				<div className={styles.main__button}>
-					<a href='/' className={styles.btn}>
+					<NavLink to='/' className={styles.btn}>
 						explore
-					</a>
+					</NavLink>
 				</div>
 			</main>
 		</div>
