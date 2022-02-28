@@ -100,7 +100,6 @@ li {
 /* media query for desktop screens */
 @media (min-width: 80em) {
 	.grid__container {
-		display: grid;
 		grid-template-columns: minmax(1.5rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
 				1.5rem,
 				1fr
