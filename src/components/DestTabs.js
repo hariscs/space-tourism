@@ -23,7 +23,7 @@ const TabsData = [
 ];
 
 const DestTabs = () => {
-	const [activeTab, setActiveTab] = useState(TabsData[0].id);
+	const [activeTab, setActiveTab] = useState('Tab 1');
 	const handleClick = (newActiveTab) => {
 		setActiveTab(newActiveTab);
 	};
@@ -40,15 +40,16 @@ const DestTabs = () => {
 					</button>
 				))}
 			</div>
+
 			{TabsData.map(
 				(data) =>
 					data.id === activeTab && (
 						<div key={data.id} className={styles.tab__flex}>
 							<div className={styles.tab__img}>
-								<h1>{data.img}</h1>
+								<img src={data.image} alt='img' />
 							</div>
 							<div className={styles.tab__info}>
-								<h2>{data.title}</h2>
+								<h2>{data.name}</h2>
 								<p>{data.body}</p>
 							</div>
 						</div>

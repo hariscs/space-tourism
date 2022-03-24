@@ -1,4 +1,4 @@
-.dest {
+/* .dest {
 	background-image: url(../../bg-images/destination/background-destination-mobile.jpg);
 	background-position: center;
 	background-size: cover;
@@ -6,15 +6,21 @@
 	color: #fff;
 }
 
-/* media query for tablets screens */
 @media (min-width: 50em) {
 	.dest {
 		background-image: url(../../bg-images/destination/background-destination-tablet.jpg);
 	}
 }
-/* media query for desktop screens */
+
 @media (min-width: 80em) {
 	.dest {
 		background-image: url(../../bg-images/destination/background-destination-desktop.jpg);
 	}
+} 
+*/
+
+.dest {
+	background: black;
+	color: white;
+	min-height: 100vh;
 }
