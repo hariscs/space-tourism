@@ -21,6 +21,7 @@ body {
 	min-height: 100vh;
 	font-size: 1.125rem;
 	font-family: 'Barlow', sans-serif;
+	background: black;
 }
 
 img {
@@ -68,35 +69,6 @@ li {
 	text-transform: uppercase;
 }
 
-.page__title {
-	color: var(--clr-white);
-	text-transform: uppercase;
-	font-size: 1rem;
-	letter-spacing: 2.7px;
-	text-align: center;
-	margin-block: 1rem 2rem;
-}
-
-.page__title span {
-	opacity: 0.25;
-	margin-right: 1.125rem;
-	font-weight: 700;
-}
-
-/* media query for tablets screens */
-@media (min-width: 50em) {
-	/* main title for all pages */
-	.page__title {
-		font-size: 1.25rem;
-		letter-spacing: 3.38px;
-		text-align: left;
-	}
-
-	.page__title span {
-		margin-right: 1.188rem;
-	}
-}
-
 /* media query for desktop screens */
 @media (min-width: 80em) {
 	.grid__container {
@@ -117,15 +89,5 @@ li {
 
 	.grid__container > *:last-child {
 		grid-column: 3;
-	}
-
-	/* main title for all pages */
-	.page__title {
-		font-size: 1.75rem;
-		letter-spacing: 4.72px;
-	}
-
-	.page__title span {
-		margin-right: 1.75rem;
 	}
 }

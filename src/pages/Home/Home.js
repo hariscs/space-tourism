@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Home.module.css';
-import { Header } from '../components';
+import { Header } from '../../components';
 
 const Home = () => {
 	return (

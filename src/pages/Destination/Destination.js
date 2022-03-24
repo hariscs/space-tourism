@@ -1,16 +1,13 @@
-import { Header } from '../components';
+import { Header, Title } from '../../components';
 import styles from './Destination.module.css';
-import { DestinationTabs } from '../container';
+import { DestinationTabs } from '../../container';
 
 const Destinations = () => {
 	return (
 		<div className={styles.dest}>
 			<Header />
 			<main className='container'>
-				<h1 className='page__title'>
-					<span>01</span>
-					Pick your destination
-				</h1>
+				<Title number={'01'} title={'Pick your destination'} />
 				<DestinationTabs />
 			</main>
 		</div>

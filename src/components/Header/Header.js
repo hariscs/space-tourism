@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { images } from '../../constants';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
 			<div className={` ${styles.header__flex}`}>
 				<div className={styles.logo}>
 					<NavLink to='/'>
-						<img src='/assets/shared/logo.svg' alt='logo' />
+						<img src={images.logo} alt='logo' />
 					</NavLink>
 				</div>
 				<nav className={`${styles.nav}`}>
@@ -79,11 +80,7 @@ const Header = () => {
 				</nav>
 				<div className={styles.mobile__menuIcon}>
 					<img
-						src={
-							click
-								? '/assets/shared/icon-hamburger.svg'
-								: '/assets/shared/icon-close.svg'
-						}
+						src={click ? images.iconHam : images.iconClose}
 						alt='menu'
 						onClick={handleClick}
 					/>
