@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from '../styles/components/DestTabs.module.css';
+import styles from './DestTabs.module.css';
 
 const TabsData = [
 	{

@@ -1,6 +1,6 @@
-import Header from '../components/Header';
-import styles from '../styles/pages/Destination.module.css';
-import DestTabs from '../components/DestTabs';
+import { Header } from '../components';
+import styles from './Destination.module.css';
+import { DestinationTabs } from '../container';
 
 const Destinations = () => {
 	return (
@@ -11,7 +11,7 @@ const Destinations = () => {
 					<span>01</span>
 					Pick your destination
 				</h1>
-				<DestTabs />
+				<DestinationTabs />
 			</main>
 		</div>
 	);
