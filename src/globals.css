@@ -65,9 +65,9 @@ li {
 	text-align: center;
 }
 
-.uppercase {
+/* .uppercase {
 	text-transform: uppercase;
-}
+} */
 
 /* media query for desktop screens */
 @media (min-width: 80em) {

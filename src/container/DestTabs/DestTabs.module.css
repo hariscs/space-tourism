@@ -1,45 +1,15 @@
-/* .tab {
-	/* border: 1px solid orange; 
-	display: flex;
-}
-
-.tab__info {
-	display: flex;
+.tab {
+	display: grid;
+	grid-template: 34px 1fr / repeat(2, 1fr);
+	gap: 2rem;
 }
 
 .tab__btn {
+	grid-column: 2;
 	display: flex;
-	align-items: center;
-}
-
-.tab__img {
-	border: 1px solid red;
-	width: 200px;
-	height: 200px;
-	margin: 1rem;
-}
-*/
-
-.tab {
-	display: flex;
-}
-
-.tab__img {
-	border: 1px springgreen solid;
+	gap: 0.5rem;
 }
 
 .tab__info {
-	border: 1px saddlebrown solid;
-}
-
-.tab__img img {
-	width: 200px;
-}
-button {
-	padding: 1rem 2.5rem;
-	background: blueviolet;
-	border: 0;
-}
-.current {
-	background: thistle;
+	grid-column: 1/-1;
 }

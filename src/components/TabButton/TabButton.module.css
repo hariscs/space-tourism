@@ -1,0 +1,11 @@
+.btn {
+	padding: 0.5rem 0;
+	background: transparent;
+	border: 0;
+	color: white;
+	cursor: pointer;
+}
+
+.current {
+	border-bottom: 2px solid white;
+}
