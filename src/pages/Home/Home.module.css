@@ -26,7 +26,7 @@
 	font-family: 'Bellefair', serif;
 	font-size: 5rem;
 	display: block;
-	margin-block: 1rem;
+	margin: 1rem 0;
 }
 
 .main__subtitle {
@@ -86,7 +86,7 @@
 
 	.main__title span {
 		font-size: 9.375rem;
-		margin-block: 1.5rem;
+		margin: 1.5rem 0;
 	}
 
 	.main__subtitle {
@@ -125,7 +125,7 @@
 
 	.main__button {
 		display: flex;
-		justify-content: end;
+		justify-content: flex-end;
 	}
 
 	.btn {

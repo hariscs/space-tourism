@@ -1,4 +1,3 @@
-import TabButton from '../TabButton/TabButton';
 import styles from './Tab.module.css';
 
 const Tab = ({ data }) => {
