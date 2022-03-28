@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import data from '../../assets/data/data.json';
-import { Tab, TabButton } from '../../components';
+import { Tab, TabButton, TabImage } from '../../components';
 import styles from './DestTabs.module.css';
 
 const DestTabs = () => {
@@ -8,10 +8,20 @@ const DestTabs = () => {
 	const handleClick = (newActiveTab) => {
 		setActiveTab(newActiveTab);
 	};
+	const { destinations } = data;
+
 	return (
 		<main className={styles.tab}>
+			<div className={styles.tab__img}>
+				{destinations.map(
+					(data) =>
+						data.id === activeTab && (
+							<TabImage url={data.image} title={data.title} />
+						)
+				)}
+			</div>
 			<div className={styles.tab__btn}>
-				{data.destinations.map((data) => (
+				{destinations.map((data) => (
 					<TabButton
 						key={data.id}
 						data={data}
@@ -21,7 +31,7 @@ const DestTabs = () => {
 				))}
 			</div>
 			<div className={styles.tab__info}>
-				{data.destinations.map(
+				{destinations.map(
 					(data) => data.id === activeTab && <Tab data={data} key={data.id} />
 				)}
 			</div>

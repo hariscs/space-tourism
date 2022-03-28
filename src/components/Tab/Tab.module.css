@@ -1,21 +1,26 @@
 .tab {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2rem;
-}
-
-.tab__img {
-	margin-top: -2rem;
+	text-align: center;
 }
 
 .tab__data {
 	display: flex;
 	gap: 6rem;
 	margin-top: 2rem;
+	justify-content: center;
 }
 
 .tab__dataInfo {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+}
+
+/* media query for desktop screens */
+@media (min-width: 80em) {
+	.tab {
+		text-align: left;
+	}
+	.tab__data {
+		justify-content: flex-start;
+	}
 }
