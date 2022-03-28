@@ -3,17 +3,19 @@ import styles from './Tab.module.css';
 const Tab = ({ data }) => {
 	return (
 		<div className={styles.tab}>
-			<h3 className={styles.tab__title}>{data.name}</h3>
+			<h3 className={`uppercase ${styles.tab__title}`}>{data.name}</h3>
 			<p className={styles.tab__subtitle}>{data.description}</p>
 			<div className={styles.tab__data}>
-				<h4 className={styles.tab__dataInfo}>
-					AVG. DISTANCE
-					<span>{data.distance}</span>
-				</h4>
-				<h4 className={styles.tab__dataInfo}>
-					EST. TRAVEL TIME
-					<span>{data.travel}</span>
-				</h4>
+				<div className={styles.tab__dataFlex}>
+					<h4 className={`uppercase ${styles.tab__dataInfo}`}>avg. distance</h4>
+					<span className={`uppercase ${styles.data}`}>{data.distance}</span>
+				</div>
+				<div className={styles.tab__dataFlex}>
+					<h4 className={`uppercase ${styles.tab__dataInfo}`}>
+						est. travel time
+					</h4>
+					<span className={`uppercase ${styles.data}`}>{data.travel}</span>
+				</div>
 			</div>
 		</div>
 	);

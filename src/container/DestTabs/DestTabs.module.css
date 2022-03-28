@@ -1,6 +1,6 @@
 .tab {
 	display: grid;
-	grid-template: 1fr 100px 1fr/ 1fr;
+	grid-template: 1fr minmax(1fr, 100px) 1fr/ 1fr;
 	gap: 2rem;
 	justify-items: center;
 }
@@ -8,21 +8,36 @@
 .tab__btn {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1.625rem;
+}
+
+.tab__img {
+	max-width: 170px;
+}
+
+@media (min-width: 50em) {
+	.tab__img {
+		max-width: 300px;
+	}
+	.tab__btn {
+		gap: 2.188rem;
+	}
 }
 
 @media (min-width: 80em) {
 	.tab {
-		grid-template: 80px 1fr 1fr / repeat(2, 1fr);
+		grid-template: 80px 1fr 100px / repeat(2, 1fr);
 	}
 
 	.tab__img {
 		grid-column: 1;
 		grid-row: 1/-1;
+		max-width: 445px;
 	}
 
 	.tab__info {
 		grid-column: 2/-1;
+		justify-self: start;
 	}
 	.tab__btn {
 		grid-column: 2;

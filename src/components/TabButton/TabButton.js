@@ -4,7 +4,9 @@ const TabButton = ({ data, onClick, activeTab }) => {
 	return (
 		<button
 			className={
-				data.id === activeTab ? `${styles.current} ${styles.btn}` : styles.btn
+				data.id === activeTab
+					? `uppercase ${styles.current} ${styles.btn}`
+					: `${styles.btn} uppercase`
 			}
 			onClick={onClick}
 		>
