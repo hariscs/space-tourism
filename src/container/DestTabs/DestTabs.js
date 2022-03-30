@@ -16,7 +16,7 @@ const DestTabs = () => {
 				{destinations.map(
 					(data) =>
 						data.id === activeTab && (
-							<TabImage url={data.image} title={data.title} />
+							<TabImage url={data.image} title={data.title} key={data.id} />
 						)
 				)}
 			</div>

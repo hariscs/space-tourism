@@ -1,5 +1,5 @@
 .tab__img {
-	animation: rotate 30s infinite linear;
+	animation: rotate 80s infinite linear;
 }
 
 @keyframes rotate {
