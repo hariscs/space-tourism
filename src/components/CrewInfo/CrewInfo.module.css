@@ -1,0 +1,35 @@
+.crewInfo {
+	text-align: center;
+}
+
+.crewInfo__upperTitle {
+	color: var(--clr-white);
+	margin-bottom: 0.5rem;
+	opacity: 0.5;
+	font-family: 'Bellefair', serif;
+}
+
+.crewInfo__title {
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 50em) {
+	.crewInfo__upperTitle {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 80em) {
+	.crewInfo {
+		text-align: left;
+	}
+
+	.crewInfo__upperTitle {
+		font-size: 2rem;
+		margin-bottom: 0.938rem;
+	}
+
+	.crewInfo__title {
+		margin-bottom: 1.688rem;
+	}
+}
