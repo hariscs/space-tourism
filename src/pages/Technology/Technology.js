@@ -1,4 +1,5 @@
 import { Header, Title } from '../../components';
+import { TechSlider } from '../../container';
 import styles from './Technology.module.css';
 
 const Technology = () => {
@@ -8,6 +9,7 @@ const Technology = () => {
 			<main className='container'>
 				<Title number={'03'} title={'space launch 101'} />
 			</main>
+			<TechSlider />
 		</section>
 	);
 };

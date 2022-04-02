@@ -6,3 +6,4 @@ export { default as TabImage } from './TabImage/TabImage';
 export { default as CrewButton } from './CrewButton/CrewButton';
 export { default as CrewImage } from './CrewImage/CrewImage';
 export { default as CrewInfo } from './CrewInfo/CrewInfo';
+export { default as TechInfo } from './TechInfo/TechInfo';

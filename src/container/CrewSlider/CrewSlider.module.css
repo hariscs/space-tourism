@@ -4,20 +4,10 @@
 	justify-items: center;
 }
 
-.slider__img {
-	/* max-width: 456.37px; */
-}
-
 .slider__btn {
 	display: flex;
 	gap: 1rem;
 	margin: 2rem 0;
-}
-
-@media (min-width: 50em) {
-	/* .slider__img {
-		max-width: 456.37px;
-	} */
 }
 
 @media (min-width: 80em) {
