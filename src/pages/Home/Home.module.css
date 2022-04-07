@@ -29,14 +29,6 @@
 	margin: 1rem 0;
 }
 
-/* .main__subtitle {
-	font-size: 0.938rem;
-	margin-bottom: 5.063rem;
-	max-width: 39ch;
-	margin-inline: auto;
-	line-height: 1.65;
-} */
-
 .main__button {
 	display: flex;
 	justify-content: center;
@@ -53,6 +45,7 @@
 	background: var(--clr-white);
 	position: relative;
 	z-index: 1;
+	margin-top: 5.063rem;
 }
 
 .btn::after {
@@ -89,15 +82,10 @@
 		margin: 1.5rem 0;
 	}
 
-	/* .main__subtitle {
-		font-size: 1rem;
-		max-width: 49ch;
-		margin-bottom: 9.75rem;
-	} */
-
 	.btn {
 		font-size: 2rem;
 		width: 242px;
+		margin-top: 0;
 		margin-bottom: 5.625rem;
 	}
 }
