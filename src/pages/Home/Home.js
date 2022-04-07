@@ -1,10 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Home.module.css';
 import { Header } from '../../components';
+import { motion } from 'framer-motion';
 
 const Home = () => {
 	return (
-		<div className={styles.home}>
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className={styles.home}
+		>
 			<Header />
 			<main className={` grid__container ${styles.main} `}>
 				<div className={styles.main__info}>
@@ -25,7 +31,7 @@ const Home = () => {
 					</NavLink>
 				</div>
 			</main>
-		</div>
+		</motion.div>
 	);
 };
 
