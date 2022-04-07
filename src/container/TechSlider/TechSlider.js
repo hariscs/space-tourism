@@ -16,7 +16,11 @@ const TechSlider = () => {
 				{technology.map((data) => (
 					<button
 						key={data.id}
-						className={styles.btn}
+						className={
+							techSlider === data.id
+								? `${styles.btn} ${styles.current}`
+								: styles.btn
+						}
 						onClick={() => clickHandler(data.id)}
 					>
 						{data.id}

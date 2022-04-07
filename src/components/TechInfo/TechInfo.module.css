@@ -1,4 +1,19 @@
 .techInfo__upperTitle {
 	color: var(--clr-accent);
 	letter-spacing: 2.7px;
+	font-size: 0.875rem;
+}
+
+.techInfo__title {
+	margin: 0.563rem 0 1rem;
+}
+
+@media (min-width: 50em) {
+	.techInfo__upperTitle {
+		font-size: 1rem;
+	}
+
+	.techInfo__title {
+		margin: 1rem 0 1rem;
+	}
 }
